@@ -1,0 +1,6 @@
+.mycolor{
+    color: red;
+    font-size: 40px;
+    background: url("../img/favicon.ico");
+    box-shadow:0 0 10px 15px #0CC;
+}
