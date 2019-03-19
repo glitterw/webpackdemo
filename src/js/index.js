@@ -14,3 +14,37 @@ if (module.hot) {
     // 实现热更新
     module.hot.accept();
 }
+
+
+// const express = require('express')
+// const app = express()//请求server
+// var appData = require('../data.json')//加载本地数据文件
+// var seller = appData.seller//获取对应的本地数据
+// console.log(seller)
+// //var goods = appData.goods
+// var ratings = appData.ratings
+// var apiRoutes = express.Router()
+// app.use('/api', apiRoutes)//通过路由请求数
+// console.log('999999999')
+// app.get('/myresume/index',(req,res) => {
+// res.send({m:'hello'})
+// })
+require("expose-loader?$!jquery");
+console.log('here:',$("#root"))
+
+
+$.ajax({
+    type: "get",
+    url: "/myresume/index",
+    data: "",
+    success: function(data){
+      console.log('success:',data.m)
+        console.log('testobj:',$("#test"))
+        //$("#test").className=data.m
+        $("#test").html('<h2>'+data.m+'</h2>');
+
+    }
+});
+// $.ajax({ url: "/myresume/index", context: document.body, success: function(){
+//         console.log('8888888')
+//     }});

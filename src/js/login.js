@@ -1,0 +1,1 @@
+const greeter = require('./greeter.js');
