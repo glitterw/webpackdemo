@@ -32,6 +32,8 @@ if (module.hot) {
 require("expose-loader?$!jquery");
 console.log('here:',$("#root"))
 
+var  fly = require ("flyio");
+console.log("fly:",fly)
 
 $.ajax({
     type: "get",
